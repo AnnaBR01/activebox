@@ -1,0 +1,27 @@
+{
+  "name": "activebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaBR01/activebox.git"
+  },
+  "author": "Ann&Julia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaBR01/activebox/issues"
+  },
+  "homepage": "https://github.com/AnnaBR01/activebox#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2",
+    "sass": "^1.49.9"
+  }
+}

@@ -1,0 +1,13 @@
+$base-font-size: 16px;
+
+$colors: (
+  text-color: #6c7279,
+  white: #ffffff,
+  dark: #2d3033,
+  red: #ff4343,
+);
+
+$breakpoints: (
+  mobile: rem(768px),
+  tablet: rem(1024px),
+);
