@@ -142,6 +142,10 @@
       border-bottom: 3px solid map-get($colors, grey);
     }
 
+    &:active {
+      border-bottom: 3px solid map-get($colors, scarlet);
+    }
+
     @include tablet {
       width: 112px;
       font-size: rem(12px);

@@ -39,12 +39,12 @@
   border: none;
 
   &:hover {
-    background: #e71414;
+    background: map-get($colors, scarlet);
   }
 
   &:active {
     background: map-get($colors, red);
-    box-shadow: map-get($colors, red);
+    box-shadow: 4px 4px 30px map-get($colors, red);
   }
 
   @include tablet {
@@ -53,7 +53,7 @@
   }
 
   @include mobile {
-    min-width: 280px;
+    flex-basis: 280px;
     min-height: 60px;
   }
 }
