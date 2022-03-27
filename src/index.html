@@ -5,9 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./scss/main.scss" />
 
     <title>Activebox</title>
   </head>
-  <body></body>
+  <body>
+    <section class="testimonials">
+      <div class="swiper wrapper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class="testimonials__image"
+              src="./images/women.png"
+              alt="women"
+            />
+            <figure class="testimonials__quote">
+              <blockquote class="testimonials__quote-text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </blockquote>
+              <figcaption class="testimonials__quote-author">
+                Susan Sims, Interaction Designer at XYZ
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              class="testimonials__image"
+              src="./images/women.png"
+              alt="women"
+            />
+            <figure class="testimonials__quote">
+              <blockquote class="testimonials__quote-text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </blockquote>
+              <figcaption class="testimonials__quote-author">
+                Susan Sims, Interaction Designer at XYZ
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              class="testimonials__image"
+              src="./images/women.png"
+              alt="women"
+            />
+            <figure class="testimonials__quote">
+              <blockquote class="testimonials__quote-text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </blockquote>
+              <figcaption class="testimonials__quote-author">
+                Susan Sims, Interaction Designer at XYZ
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              class="testimonials__image"
+              src="./images/women.png"
+              alt="women"
+            />
+            <figure class="testimonials__quote">
+              <blockquote class="testimonials__quote-text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </blockquote>
+              <figcaption class="testimonials__quote-author">
+                Susan Sims, Interaction Designer at XYZ
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              class="testimonials__image"
+              src="./images/women.png"
+              alt="women"
+            />
+            <figure class="testimonials__quote">
+              <blockquote class="testimonials__quote-text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </blockquote>
+              <figcaption class="testimonials__quote-author">
+                Susan Sims, Interaction Designer at XYZ
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="swiper-pagination"></div>
+
+    <!--scripts-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>

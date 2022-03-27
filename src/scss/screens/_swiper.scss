@@ -1,0 +1,111 @@
+.swiper {
+  margin: auto;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  position: relative;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.testimonials {
+  &__image {
+    width: 49%;
+    object-fit: cover;
+    object-position: center;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__quote {
+    width: 51%;
+    background: #5c3249;
+    padding: 116px 11.3% 116px 8.6%;
+
+    @include tablet {
+      padding: 47px 11.3% 110.7px 8.6%;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding: 0 25px 95px 20px;
+    }
+  }
+
+  &__quote-text {
+    padding: 17px 0;
+    font-family: "Cardo", sans-serif;
+    font-style: italic;
+    font-size: rem(36px);
+    line-height: rem(49px);
+    text-transform: capitalize;
+    color: #ffffff;
+
+    @include tablet {
+      padding: 13px 0;
+      font-size: rem(24px);
+      line-height: rem(32px);
+    }
+
+    @include mobile {
+      text-align: center;
+      padding: 23px 0;
+    }
+  }
+
+  &__quote-author {
+    padding: 6.5px 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @include tablet {
+      padding: 2.5px 0;
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+
+    @include mobile {
+      padding: 5.5px 0;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 31px;
+
+  @include tablet {
+    margin-top: 24px;
+  }
+
+  @include mobile {
+    margin-top: 23px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7e5d6f;
+  background: transparent;
+  opacity: 1;
+
+  @include tablet {
+    width: 9.5px;
+    height: 9.5px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7e5d6f;
+}

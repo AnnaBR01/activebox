@@ -5,9 +5,18 @@ $colors: (
   white: #ffffff,
   dark: #2d3033,
   red: #ff4343,
+  grey: #babbc5,
 );
 
 $breakpoints: (
-  mobile: rem(768px),
-  tablet: rem(1024px),
+  mobile: rem(1024px),
+  tablet: rem(1510px),
 );
+
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 12.5px;
+
+  @include mobile {
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+  }
+}
