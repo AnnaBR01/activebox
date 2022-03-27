@@ -41,6 +41,7 @@
 
   &__menu-burger {
     display: none;
+    transition: all 0.3s ease 0s;
 
     @include mobile {
       display: block;
@@ -104,7 +105,7 @@
       width: 100%;
       position: absolute;
       top: -100%;
-      transition: all 0.3s ease 0s;
+      transition: all 1s ease 0s;
 
       &.active {
         top: 84px;
@@ -157,8 +158,10 @@
 
   &__content {
     @include mobile {
+      opacity: 1;
+      transition: all 1s ease 0s;
       &.active {
-        opacity: 1;
+        opacity: 0;
       }
     }
   }
