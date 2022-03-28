@@ -1,0 +1,60 @@
+.works {
+  padding: 0 1px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: 2px;
+
+  @include mobile {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  }
+
+  &__case {
+    position: relative;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__overlay {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+
+    &:hover {
+      opacity: 0.8;
+      background: map-get($colors, red);
+    }
+
+    &:active {
+      opacity: 0.8;
+      background: #b90c0c;
+    }
+  }
+
+  &__title {
+    margin: 126px 0 36px;
+    color: map-get($colors, white);
+
+    @include tablet {
+      margin: 84px 0 22px;
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+  }
+
+  &__description {
+    color: map-get($colors, white);
+
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+  }
+}
