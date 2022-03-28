@@ -11,7 +11,7 @@
   border: none;
 
   &:hover {
-    background: #e71414;
+    background: map-get($colors, scarlet);
   }
 
   &:active {
@@ -25,7 +25,7 @@
   }
 
   @include mobile {
-    flex-basis: 280px;
+    min-width: 280px;
     min-height: 60px;
   }
 }
