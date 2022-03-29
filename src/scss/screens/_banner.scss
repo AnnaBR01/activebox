@@ -154,8 +154,8 @@
 
     @include mobile {
       padding: 24px 0;
-      font-size: 13px;
-      line-height: 15px;
+      font-size: rem(13px);
+      line-height: rem(15px);
       width: 100%;
     }
   }
@@ -176,14 +176,10 @@
 
     @include tablet {
       margin-bottom: 61px;
-      font-size: rem(48px);
-      line-height: rem(56px);
     }
 
     @include mobile {
       margin-bottom: 32px;
-      font-size: rem(36px);
-      line-height: rem(42px);
     }
   }
 
@@ -195,8 +191,6 @@
 
     @include tablet {
       margin-bottom: 91px;
-      font-size: rem(18px);
-      line-height: rem(21px);
     }
 
     @include mobile {
