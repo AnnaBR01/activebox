@@ -2,6 +2,16 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-size: rem(18px);
   line-height: rem(21px);
+
+  @include tablet {
+    margin-bottom: 15.58px;
+    font-size: rem(14px);
+    line-height: rem(16px);
+  }
+
+  @include mobile {
+    margin-bottom: 38.71px;
+  }
 }
 
 h1 {
