@@ -144,6 +144,7 @@
 
     &:active {
       border-bottom: 3px solid map-get($colors, scarlet);
+      color: map-get($colors, scarlet);
     }
 
     @include tablet {
