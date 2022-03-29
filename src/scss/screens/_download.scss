@@ -44,5 +44,10 @@
 
   &__button {
     @include button;
+
+    @include tablet {
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
   }
 }
