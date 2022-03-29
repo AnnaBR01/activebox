@@ -25,35 +25,3 @@
     @content;
   }
 }
-
-@mixin button {
-  font-weight: 900;
-  font-size: rem(24px);
-  line-height: rem(28px);
-  text-transform: uppercase;
-  color: map-get($colors, white);
-  background: map-get($colors, red);
-  min-width: 370px;
-  min-height: 80px;
-  cursor: pointer;
-  border: none;
-
-  &:hover {
-    background: map-get($colors, scarlet);
-  }
-
-  &:active {
-    background: map-get($colors, red);
-    box-shadow: 4px 4px 30px map-get($colors, red);
-  }
-
-  @include tablet {
-    min-width: 314px;
-    min-height: 80px;
-  }
-
-  @include mobile {
-    min-width: 280px;
-    min-height: 60px;
-  }
-}
