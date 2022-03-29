@@ -18,15 +18,11 @@
     @include tablet {
       margin-bottom: 4.71px;
       padding: 17px 0;
-      font-size: rem(24px);
-      line-height: rem(28px);
     }
 
     @include mobile {
       margin-bottom: 3px;
       padding: 16px 0;
-      font-size: rem(18px);
-      line-height: rem(21px);
     }
   }
 
@@ -37,8 +33,6 @@
 
     @include tablet {
       margin-bottom: 45.71px;
-      font-size: rem(14px);
-      line-height: rem(16px);
     }
 
     @include mobile {
