@@ -52,23 +52,14 @@
 
     @include tablet {
       margin: 53px 0 23px;
-      font-size: rem(18px);
-      line-height: rem(21px);
     }
 
-    @include tablet {
-      margin: 46px 0 10px; //10 ориентировочно
-      font-size: rem(18px);
-      line-height: rem(21px);
+    @include mobile {
+      margin: 46px 0 10px;
     }
   }
 
   &__text {
     color: map-get($colors, text-color);
-
-    @include tablet {
-      font-size: rem(14px);
-      line-height: rem(16px);
-    }
   }
 }
