@@ -4,13 +4,8 @@ body {
   line-height: rem(21px);
 
   @include tablet {
-    margin-bottom: 15.58px;
     font-size: rem(14px);
     line-height: rem(16px);
-  }
-
-  @include mobile {
-    margin-bottom: 38.71px;
   }
 }
 
@@ -19,6 +14,16 @@ h1 {
   font-size: rem(64px);
   line-height: rem(75px);
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: rem(48px);
+    line-height: rem(56px);
+  }
+
+  @include mobile {
+    font-size: rem(36px);
+    line-height: rem(42px);
+  }
 }
 
 h2 {
@@ -31,6 +36,11 @@ h3 {
   font-weight: 700;
   font-size: rem(30px);
   line-height: rem(35px);
+
+  @include tablet {
+    font-size: rem(24px);
+    line-height: rem(28px);
+  }
 }
 
 h4 {
@@ -38,13 +48,35 @@ h4 {
   font-size: rem(24px);
   line-height: rem(28px);
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: rem(18px);
+    line-height: rem(21px);
+  }
+}
+
+h5 {
+  font-weight: 400;
+  font-size: rem(18px);
+  line-height: rem(21px);
+
+  @include tablet {
+    font-size: rem(14px);
+    line-height: rem(16px);
+  }
 }
 
 h6 {
   font-weight: 700;
   font-size: rem(13px);
   line-height: rem(15px);
+
+  @include tablet {
+    font-size: rem(12px);
+    line-height: rem(14px);
+  }
 }
+
 .container {
   max-width: 1170px;
   margin: 0 auto;

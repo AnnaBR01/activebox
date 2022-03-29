@@ -1,7 +1,7 @@
 .footer {
   &__row {
     padding: 71px 170px;
-    background-color: #353c65;
+    background-color: map-get($colors, dark-blue);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -33,8 +33,6 @@
 
     @include tablet {
       margin-bottom: 17.72px;
-      font-size: rem(14px);
-      line-height: rem(16px);
     }
 
     @include mobile {
@@ -47,11 +45,6 @@
     text-transform: capitalize;
     text-decoration: none;
     color: map-get($colors, white);
-
-    @include tablet {
-      font-size: rem(14px);
-      line-height: rem(16px);
-    }
   }
 
   &__social-network {
@@ -69,8 +62,6 @@
 
     @include tablet {
       margin-bottom: 32.5px;
-      font-size: rem(14px);
-      line-height: rem(16px);
     }
 
     @include mobile {
@@ -127,8 +118,6 @@
   &__title-about {
     @include tablet {
       margin-bottom: 15.58px;
-      font-size: rem(14px);
-      line-height: rem(16px);
     }
 
     @include mobile {
@@ -139,11 +128,6 @@
   &__description {
     text-transform: capitalize;
     color: map-get($colors, white);
-
-    @include tablet {
-      font-size: rem(14px);
-      line-height: rem(16px);
-    }
   }
 
   &__copyright {
@@ -155,8 +139,6 @@
 
     @include tablet {
       padding: 14.28px 0 14.43px;
-      font-size: rem(14px);
-      line-height: rem(16px);
     }
 
     &--text-white {
