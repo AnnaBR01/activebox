@@ -4,6 +4,7 @@
 
   @include tablet {
     margin-bottom: 78.41px;
+    padding: 0 20px;
   }
 
   @include mobile {
@@ -41,12 +42,13 @@
   }
 
   &__image {
-    width: 100%;
     margin-bottom: 30px;
     object-fit: cover;
     object-position: center;
 
     @include tablet {
+      display: block;
+      text-align: center;
       margin-bottom: 25.23px;
     }
 
