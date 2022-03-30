@@ -1,0 +1,53 @@
+.download {
+  text-align: center;
+  padding: 114px 0;
+
+  @include tablet {
+    padding: 78px 0;
+  }
+
+  @include mobile {
+    padding: 34.5px 20px 45px;
+  }
+
+  &__title {
+    margin-bottom: 5.29px;
+    padding: 17.5px 0;
+    font-weight: 500;
+
+    @include tablet {
+      margin-bottom: 4.71px;
+      padding: 17px 0;
+    }
+
+    @include mobile {
+      margin-bottom: 3px;
+      padding: 16px 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin-bottom: 45.71px;
+    }
+
+    @include mobile {
+      margin-bottom: 13.42px;
+      font-size: rem(13px);
+      line-height: rem(15px);
+    }
+  }
+
+  &__button {
+    @include button;
+
+    @include tablet {
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+  }
+}
