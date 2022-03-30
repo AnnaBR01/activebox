@@ -127,8 +127,8 @@
 
   &__menu-item {
     display: inline-block;
-    width: 134px;
-    padding: 42px 0 38px;
+    //min-width: 100px;
+    padding: 42px 13px 38px;
     text-decoration: none;
     font-weight: 700;
     font-size: rem(13px);
@@ -148,7 +148,7 @@
     }
 
     @include tablet {
-      width: 112px;
+      // min-width: 95px;
       font-size: rem(12px);
       line-height: rem(14px);
     }
