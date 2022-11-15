@@ -1,0 +1,24 @@
+$base-font-size: 16px;
+
+$colors: (
+  text-color: #6c7279,
+  white: #ffffff,
+  dark: #2d3033,
+  red: #ff4343,
+  grey: #babbc5,
+  scarlet: #e71414,
+  dark-blue: #353c65,
+);
+
+$breakpoints: (
+  mobile: rem(768px),
+  tablet: rem(1024px),
+);
+
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 12.5px;
+
+  @include mobile {
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+  }
+}
